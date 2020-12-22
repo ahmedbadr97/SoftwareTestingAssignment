@@ -5,7 +5,6 @@ import 'My_DS.dart';
 
 void main(List<String> arguments) {
 
-  var myqueue = MyQueue<int>();
 
   group('Stack ', () {
 
