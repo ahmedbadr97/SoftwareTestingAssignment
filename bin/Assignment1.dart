@@ -46,7 +46,7 @@ void main(List<String> arguments) {
         int noOfValuesToDequeue = random.nextInt(noOfValuesToEnqueue);
         List<int> inputValues = List<int>(noOfValuesToEnqueue);
 
-        // Generating List of Inputs and Push it to the Stack
+        // Generating List of Inputs and Push it to the Queue
         for (int i = 0; i < noOfValuesToEnqueue; i++) {
           int rValue = random.nextInt(100);
           inputValues[i] = rValue;
@@ -60,7 +60,7 @@ void main(List<String> arguments) {
           expectedOutput[i] = (inputValues[i]);
         }
 
-        expect(output, equals(expectedOutput));
+        expect(output, expectedOutput);
       });
     }
   });
