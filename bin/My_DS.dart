@@ -32,7 +32,10 @@ class _MyLinkedList<T> {
   }
 
   T peek() {
-    return _front.value;
+    if(_front!=null) {
+      return _front.value;
+    }
+    return null;
   }
 
   void _insertFront(T value) {
